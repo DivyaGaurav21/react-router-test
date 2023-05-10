@@ -1,17 +1,26 @@
 .sidebar {
     height: 100vh;
-    width: 150px;
-    background-color: #f4ebeb;
+    min-width: 200px;
+    background-color: #c9d4d8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 150px;
+    padding-top: 20px;
     gap:6px;
 }
 a{
     text-decoration: none;
     color: #f44336;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 800;
 }
-
+a:hover{
+    border-bottom: 1px solid #f44336;
+    transition: 2s;
+}
+@media screen and (max-width:556px){
+    .sidebar{
+        min-width: 100px;
+    }
+}
